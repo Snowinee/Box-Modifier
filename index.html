@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/theme.css">
+
+    <link rel="stylesheet" id="style" href="">
+    <title>Box Modifier</title>
+</head>
+<body>
+    <main>
+        <div class="mainContainer">
+            <section class="heading">
+                <h1>Box Modifier</h1>
+                <p>Playing with boxes could be quiet fun sometimes :)</p>
+            </section>
+            <section class="box">
+                <div id="mainBox"></div>
+            </section>
+            <section class="controls">
+
+                <div class="dimensionsContainer">
+                    <p class="label">Box Dimensions</p>
+                    <input type="number" placeholder="Width: 60" value="60" min="0" max="1500" name="width" id="width">
+                    <input type="number" placeholder="Height: 60" value="60" min="0" max="510" name="height" id="height">
+                </div>
+
+                <div class="borderContainer">
+                    <p class="label">Box Border</p>
+                    <input type="number" min="0" placeholder="Top-Left: 0" name="borderTopLeft" id="top-left">
+                    <input type="number" min="0" placeholder="Top-right: 0" name="borderTopRight" id="top-right">
+                    <input type="number" min="0" placeholder="Buttom-Left: 0" name="borderBottomLeft" id="bottom-left">
+                    <input type="number" min="0" placeholder="Buttom-Right: 0" name="borderBottomRight" id="bottom-right">
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <section class="theme">
+        <div id="normal" class="normal themes"></div>
+        <div id="yellow" class="yellow themes"></div>
+        <div id="blue" class="blue themes"></div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>

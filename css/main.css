@@ -1,0 +1,157 @@
+main {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .mainContainer {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0 auto;
+  background-color: white;
+  width: 70%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 10px;
+}
+
+main .mainContainer .heading {
+  background-color: white;
+  text-align: center;
+  color: var(--textColor);
+  padding: 10px 10px;
+  line-height: 25px;
+}
+
+main .mainContainer .heading h1 {
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--mainColor);
+}
+
+main .mainContainer .heading p {
+  color: var(--textColor);
+  font-weight: 600;
+  font-size: 13px;
+}
+
+main .mainContainer .box {
+  border: 2px solid black;
+  width: 90%;
+  height: 510px;
+  margin: 10px auto;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+}
+
+main .mainContainer .box #mainBox {
+  width: 60px;
+  z-index: 1;
+  height: 60px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background-color: var(--backgroundColor);
+}
+
+main .mainContainer .controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 30px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .mainContainer .controls input {
+  padding: 5px 5px;
+  border: 1px solid #3a0849;
+}
+
+main .mainContainer .controls input::-webkit-input-placeholder {
+  color: #3a0849;
+}
+
+main .mainContainer .controls input:-ms-input-placeholder {
+  color: #3a0849;
+}
+
+main .mainContainer .controls input::-ms-input-placeholder {
+  color: #3a0849;
+}
+
+main .mainContainer .controls input::placeholder {
+  color: #3a0849;
+}
+
+main .mainContainer .controls .dimensionsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 6px;
+}
+
+main .mainContainer .controls .label {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: label;
+  text-align: center;
+  color: var(--mainColor);
+  font-weight: 600;
+}
+
+main .mainContainer .controls .borderContainer {
+  display: -ms-grid;
+  display: grid;
+  gap: 6px;
+      grid-template-areas: "label label" "top-left top-right" "bottom-left bottom-right";
+}
+
+main .mainContainer .controls .borderContainer #top-left {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: top-left;
+}
+
+main .mainContainer .controls .borderContainer #top-right {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: top-right;
+}
+
+main .mainContainer .controls .borderContainer #bottom-left {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: bottom-left;
+}
+
+main .mainContainer .controls .borderContainer #bottom-right {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: bottom-right;
+}
+/*# sourceMappingURL=main.css.map */

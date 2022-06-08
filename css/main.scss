@@ -1,0 +1,109 @@
+main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+
+    .mainContainer {
+        align-self: center;
+        margin: 0 auto;
+        background-color: white;
+        width: 70%;
+        height: fit-content;
+        padding: 10px;
+
+        .heading {
+            background-color: white;
+            text-align: center;
+            color: var(--textColor);
+            padding: 10px 10px;
+            line-height: 25px;
+            
+            h1 {
+                font-size: 32px;
+                font-weight: 900;
+                color: var(--mainColor);
+            }
+
+            p {
+                color: var(--textColor);
+                font-weight: 600;
+                font-size: 13px;
+            }
+        }
+
+        .box {
+            border: 2px solid black;
+            width: 90%;
+            height: 510px;
+            margin: 10px auto;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+
+            #mainBox {
+                width: 60px;
+                z-index: 1;
+                height: 60px;
+                transition: all 0.5s;
+                background-color: var(--backgroundColor);
+            }
+        }
+
+        .controls {
+            display: flex;
+            flex-direction: row;
+            margin-top: 30px;
+            flex: 1;
+            justify-content: space-around;
+
+            input {
+                padding: 5px 5px;
+                border: 1px solid rgb(58, 8, 73);
+            }
+
+            input::placeholder {
+                color: rgb(58, 8, 73);
+            }
+
+            .dimensionsContainer {
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+            }
+
+            .label {
+                grid-area: label;
+                text-align: center;
+                color: var(--mainColor);
+                font-weight: 600;
+            }
+
+            .borderContainer {
+                display: grid;
+                gap: 6px;
+                grid-template-areas:
+                "label label"
+                "top-left top-right"
+                "bottom-left bottom-right";
+
+                #top-left {
+                    grid-area: top-left;
+                }
+
+                #top-right {
+                    grid-area: top-right;
+                }
+
+                #bottom-left {
+                    grid-area: bottom-left;
+                }
+
+                #bottom-right {
+                    grid-area: bottom-right;
+                }
+            }
+        }
+    }
+}
