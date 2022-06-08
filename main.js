@@ -78,15 +78,26 @@ const yellow = document.getElementById("yellow");
 const blue = document.getElementById("blue");
 const currentStyle = document.getElementById("style");  
 
+window.onload = function(){
+    storedTheme = localStorage.getItem("theme");
+    currentStyle.setAttribute("href", storedTheme);
+}
+
+function updateTheme(){
+    localStorage.setItem("theme", currentStyle.getAttribute("href"))
+}
 
 normal.onclick = function(){
-    currentStyle.href = "css/main.css"
+    currentStyle.setAttribute("href", "css/main.css");
+    updateTheme();
 }
 
 yellow.onclick = function(){
-    currentStyle.href = "css/yellow.css"
+    currentStyle.setAttribute("href", "css/yellow.css")
+    updateTheme();
 }
 
 blue.onclick = function(){
-    currentStyle.href = "css/blue.css"
+    currentStyle.setAttribute("href", "css/blue.css");
+    updateTheme();
 }

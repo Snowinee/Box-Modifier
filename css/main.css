@@ -1,5 +1,5 @@
 main {
-  height: 100vh;
+  height: 120vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -153,5 +153,32 @@ main .mainContainer .controls .borderContainer #bottom-right {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: bottom-right;
+}
+
+@media (max-width: 750px) {
+  .mainContainer {
+    margin-top: 130px !important;
+    width: 90% !important;
+  }
+  .mainContainer .controls {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .mainContainer .box #mainBox {
+    max-width: 330px;
+    max-height: 500px;
+  }
+  .mainContainer .borderContainer {
+    margin-top: 20px;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=main.css.map */

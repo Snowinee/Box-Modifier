@@ -42,4 +42,10 @@
 .theme .blue {
   background-color: rgba(0, 89, 255, 0.714);
 }
+
+@media (max-width: 750px) {
+  .theme {
+    visibility: hidden;
+  }
+}
 /*# sourceMappingURL=theme.css.map */
